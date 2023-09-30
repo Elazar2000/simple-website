@@ -1,0 +1,55 @@
+
+p, h1{
+    text-align: center;
+    margin: 1em auto;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff
+}
+
+body{
+    background-color: #3d3d5d;
+}
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    color: #ffffff
+  }
+
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+
+
+  select {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    padding: 0.5em;
+    border-radius: 5px;
+    appearance: none; /* Remove default appearance (like arrow) */
+}

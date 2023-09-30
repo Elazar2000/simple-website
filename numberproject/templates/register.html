@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+<center><h1>Registration Form</h1></center>
+<p>Please fill out this form with the required information</p>
+    <form method="post" action="register">
+    {% csrf_token %}
+        <fieldset>
+          <label for="Username">Enter Your Username: <input id="Username" name="Username" placeholder="Eg.Ivano_Ninja21" type="text" required /></label>
+            <label for="First_name">Enter Your First Name: <input id="First_name" name="First_name" placeholder="First_name" type="text" required /></label>
+            <label for="Last_name">Enter Last Name: <input id="Last_name" name="Last_name" placeholder="Last_name" type="text" required /></label>
+          <label for="email">Enter Your Email: <input id="email" name="email" placeholder="Email"type="email" required /></label>
+          <label for="new-password">Create a New Password: <input id="new-password" name="new-password" placeholder="Minimum eight characters" type="password"  /></label>
+          <label for="new-password">Confirm Password: <input id="confirm password" name="confirm password" placeholder="confirm password" type="password"  /></label>
+        </fieldset>
+    <input type="submit" value="Submit" />
+    </form>
+{% for msg in messages %}
+<h2>{{msg}}</h2>
+{% endfor %}
+
+</body>
+</html>
